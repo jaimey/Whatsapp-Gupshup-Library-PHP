@@ -1,0 +1,5 @@
+/vendor/
+/coverage/
+/composer.lock
+/.phpunit.cache
+/example/

@@ -1,6 +1,8 @@
 # Libreria WhatsApp Gupshup PHP
 - [Libreria WhatsApp Gupshup PHP](#libreria-whatsapp-gupshup-php)
-  - [Outbound Message](#outbound-message)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Outbound Message](#outbound-message)
       - [Send Text](#send-text)
       - [Send Image](#send-image)
       - [Send Audio](#send-audio)
@@ -15,10 +17,15 @@
       - [Get Opt-in User list](#get-opt-in-user-list)
       - [Mark User Opt-in Opt-out](#mark-user-opt-in-opt-out)
       - [Check Wallet balance](#check-wallet-balance)
-  - [Inbound Message and Events](#inbound-message-and-events)
+    - [Inbound Message and Events](#inbound-message-and-events)
   - [License](#license)
-
-## Outbound Message
+## Installation
+You can install the package via composer:
+```bash
+composer require jaime/whatsapp-gupshup
+```
+## Usage
+### Outbound Message
 
 ```php
 $gupshup = new OutboundMessage('SRC_NAME', 'SOURCE', 'API_KEY');
@@ -242,7 +249,7 @@ $response = $gupshup->markOpt('573111111111', 'out');
 $response = $gupshup->getWalletBalance();
 ```
 
-## Inbound Message and Events
+### Inbound Message and Events
 
 ```php
 <?php

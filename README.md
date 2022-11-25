@@ -35,7 +35,7 @@ $gupshup = new OutboundMessage('SRC_NAME', 'SOURCE', 'API_KEY');
 
 ```php
 $gupshup->setText('Texto de prueba');
-$gupshup->send('573111111111');
+$gupshup->sendRequest('573111111111');
 ```
 
 #### Send Image
@@ -45,7 +45,7 @@ $url = "https://www.buildquickbots.com/whatsapp/media/sample/jpg/sample01.jpg";
 $caption =  "Sample image";
 
 $gupshup->setImage($url, $caption);
-$gupshup->send('573111111111');
+$gupshup->sendRequest('573111111111');
 ```
 
 #### Send Audio
@@ -54,7 +54,7 @@ $gupshup->send('573111111111');
 $url = "https://www.buildquickbots.com/whatsapp/media/sample/jpg/sample01.jpg";
 
 $gupshup->setAudio($url);
-$gupshup->send('573111111111');
+$gupshup->sendRequest('573111111111');
 ```
 
 #### Send File
@@ -64,7 +64,7 @@ $url = "https://www.buildquickbots.com/whatsapp/media/sample/pdf/sample01.pdf";
 $filename = "Sample funtional resume";
 
 $gupshup->setFile($url, $filename);
-$gupshup->send('573111111111');
+$gupshup->sendRequest('573111111111');
 ```
 
 #### Send Video
@@ -74,7 +74,7 @@ $url = "https://www.buildquickbots.com/whatsapp/media/sample/video/sample01.mp4"
 $caption = "Sample video";
 
 $gupshup->setFile($url, $filename);
-$gupshup->send('573111111111');
+$gupshup->sendRequest('573111111111');
 ```
 
 #### Send Sticker
@@ -83,7 +83,7 @@ $gupshup->send('573111111111');
 $url = "http://www.buildquickbots.com/whatsapp/stickers/SampleSticker01.webp";
 
 $gupshup->setFile($url, $filename);
-$gupshup->send('573111111111');
+$gupshup->sendRequest('573111111111');
 ```
 
 #### Send List Messages

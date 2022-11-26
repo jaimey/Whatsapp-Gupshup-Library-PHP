@@ -103,6 +103,15 @@ class InboundMessageandEvents
 
     public function getSenderPhone()
     {
-        return $this->notification['payload']['sender']['phone'];
+        if($this->getTypePayload() == "text"){
+            return $this->notification['payload']['sender']['phone'];
+        }else{
+            return $this->notification['payload']['destination'];
+        }
+    }
+
+    public function getMismatchWAID()
+    {
+            return $this->notification['payload']['payload']['wa_id'];
     }
 }
